@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>DZ</title>
-</head>
-<style>
-   body {
-    background: #c7b39b;
-    color: #fff;
-   }
-  </style>
-<body bgcolor="green">
-	<div align="center">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>DZ</title>
+ </head>
+ <body bgcolor="#00ff00">
+
+  <table border="1" cellpadding="100" cellspacing="15">
+   <tr>
+     <td  colspan="2" bgcolor="#D3EDF6" align="left" >SITE BRENDING
+     	<div align="right">LOGIN<input type="text" name="email"
+     		placeholder="Enter email"></div>
+     		<div align="right">PASSWORD<input type="password" name="password"
+     		placeholder="Enter password">
+     	</div><div align="right"><input type="submit" name="DOO IT"></div>
+
+     	</td>
+   </tr> 
+   <tr>
+     <td valign="top" align="center" ><div align="center">
 	<h3>регистация</h3>
 	<font action="кудато там отправим" method="POST">
 		<input type="text" name="email" placeholder="examle@email.com"><br>
@@ -18,10 +26,12 @@
 		<input type="submit" value="Register">
 		
 	 </font>
-	 </div>
-	<h1>Табличка</h1>
-	<table border="1" width="100%" cellpadding="5" bgcolor="red">
-	 <thead>
+	 </div></td>
+     <td width="98%"> <table border="1">
+	 	<thead></thead>
+	 	<th>Табличка</h1>
+	<table border="1" width="100%" cellpadding="50" bgcolor="red">
+		<thead>
 			<th>первая</th>
 			<th>вторя</th>
 			<th>третья</th>
@@ -46,8 +56,10 @@
 		</tr>
 
 		</tbody>
-	</table>
+	</table></th>
+	 </table></td>
+   </tr>
+  </table> 
 
-
-</body>
+ </body>
 </html>
