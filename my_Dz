@@ -21,7 +21,7 @@
 	 </div>
 	<h1>Табличка</h1>
 	<table border="1" width="100%" cellpadding="5" bgcolor="red">
-		<thead>
+	 <thead>
 			<th>первая</th>
 			<th>вторя</th>
 			<th>третья</th>
