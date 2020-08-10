@@ -29,7 +29,7 @@ while ($isVisi && (($rand = (int)rand(1, 100)) !== $user_num)) {
         <input type="submit" class="btn btn-success"></form><br>
         <div ' . ($isVisi ? '' : 'hidden') . '>
     <p> И вот с <strong>'
-    .   ($is ? (($counter + 1) . ' (or ' . ($counter_factor + 1) . ' in fact)') : $counter_factor + 1)
+    .   ($counter ? (($counter + 1) . ' (or ' . ($counter_factor + 1) . ' in fact)') : $counter_factor + 1)
     . '</strong> попытки мы угадали ваше число <strong>' . $user_num . ' </strong></p>'
     . (strlen($arr) > 1 ? '<p> По подробнее)' . $arr . '</p>' : '')
     . '</div></div>';
