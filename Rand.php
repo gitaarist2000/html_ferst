@@ -9,11 +9,12 @@
 <?php
 
 (int) $_POST['number_from_user'];
+  
 $user_num = (int)$_POST['number_from_use'];
 $isVisi = $user_num < 101 && $user_num > 0;
-
 $counter = 0;
 $rand = 0;
+  
 while ($isVisi && (($rand = (int)rand(1, 100)) !== $user_num)) {
    $counter++;
     $arr .= ' ' . $rand;
