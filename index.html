@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ДЗ</title>
+        <style>
+            ul.nav{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            .nav li { 
+                float: left;
+            }
+            ul.nav a {
+                display: block;
+                width: 5em;
+                padding:10px;
+                margin: 0 5px;
+                background-color: #f4f4f4;
+                border: 1px dashed #333;
+                text-decoration: none;
+                color: #333;
+                text-align: center;
+            }
+            ul.nav a:hover{
+                background-color: #333;
+                color: #f4f4f4;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="/">Главная</a></li>
+            <li><a href="/reg.html">Регистрация</a></li>
+            <li><a href="/log.html">Авторизация</a></li>
+            <li><a href="#">выход</a></li>
+        </ul>
+        <?php
+
+$json = file_get_contents('index.json');
+$array = json_decode($json, true);
+
+$headers = array_keys($array[0]);
+
+$html = '<table border="1"><head>';
+
+foreach ($headers as $key) {
+    $html .= "<th>$key</th>";
+}
+
+$html .= '</head><body>';
+
+foreach ($array as $row) {
+    $html .= '<tr>';
+    foreach ($headers as $key) {
+        $html .= '<td>' . $row[$key] . '</td>';
+    }
+    $html .= '</tr>';
+}
+
+$html .= '</body></table>';
+
+
+echo $html;
+ 
+    </body>
+</html>
